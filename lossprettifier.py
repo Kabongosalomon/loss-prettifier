@@ -38,7 +38,7 @@ class LossPrettifier(object):
             if self.show_percentage:
                 show_value = 0 if pre_value == 0 \
                              else (value - pre_value) / float(pre_value)
-                key_string = f'| {key}: {show_color}{value:3.2f}({show_value:+3.2%}) {indicator}'
+                key_string = f'| {key}: {show_color}{value:3.4f}({show_value:+3.4%}) {indicator}'
             else: 
                 key_string = f'| {key}: {show_color}{value:.4f} {indicator}'
             
